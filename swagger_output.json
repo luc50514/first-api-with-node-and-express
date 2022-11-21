@@ -40,5 +40,22 @@
         }
       }
     }
+  },
+  "components": { 
+  "schemas": {
+    "Player": {
+      "type": "object",
+      "properties": {
+        "playerid": {
+          "type": "integer",
+          "description": "The player ID."
+        },
+        "playername": {
+          "type": "string",
+          "description": "The player name."
+        }        
+      }
+    }
+  }
   }
 }

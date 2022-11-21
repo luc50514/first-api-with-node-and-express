@@ -11,3 +11,8 @@ test('returns player information when given playerid', () => {
 test('returns player information when given playerid', () => {
   expect(getplayer('1').Name).toBe('Richard');
 });
+
+test('returns player information when given playerid', () => {
+  expect(getplayer('1').Name).toBe('Richard');
+  expect(getplayer('1').Playerid).toBe('1');
+});

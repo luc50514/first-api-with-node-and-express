@@ -3,7 +3,7 @@ var router = express.Router();
 var getPlayer = require('../app/getPlayer.cjs')
 
 router.get('/:playerid', function(req, res){
-   res.send(getPlayer(req.params.playerid));
+   res.send(getPlayer(req.params.playerid).Playerid);
 });
 router.post('/', function(req, res){
    res.send('POST route on players.');
